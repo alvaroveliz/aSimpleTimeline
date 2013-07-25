@@ -192,7 +192,7 @@ function ast_shortcode($attributes)
   $ast = new aSimpleTimeline();
   $tweets = $ast->getUserTimeline($attributes['username']);
 
-  echo '<ul>';
+  echo '<ul id="asimpletimeline">';
   foreach ($tweets as $tweet)
   {
     $text = $ast->parseTweetText($tweet);
